@@ -1,0 +1,1 @@
+package com.melonlee.ewd.utils;public class StringUtils {	}
