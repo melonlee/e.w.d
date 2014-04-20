@@ -20,7 +20,7 @@ comments: true
 >E.W.D主旨是能够让任何人简单快捷的对微信公众号在开发者模式下进行自定义的功能配置，真正达到 "Everybody Wechat Developer"!
 
 
-4.20 更改为Maven 
+4.20 更改为Maven
 
 
 演示地址 : [http://ewd.melonlee.com](http://ewd.melonlee.com) 无需登陆账号
