@@ -63,10 +63,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AdminController.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AdminController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/melonlee/ewd/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="0.65989846" vertical-offset="0" max-vertical-offset="591">
+            <state line="29" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="14" selection-start="435" selection-end="435" vertical-scroll-proportion="0.58303887" vertical-offset="0" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
@@ -110,6 +119,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/melonlee/ewd/controller/AccountController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/melonlee/ewd/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -520,12 +530,12 @@
       <changelist id="a1b4d942-d832-4784-a7f0-9d1092265889" name="Default" comment="" />
       <created>1398000278409</created>
       <updated>1398000278409</updated>
-      <workItem from="1398000281966" duration="1399000" />
+      <workItem from="1398000281966" duration="1790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1399000" />
+    <option name="totallyTimeSpent" value="1790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
@@ -676,7 +686,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/melonlee/ewd/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="0.65989846" vertical-offset="0" max-vertical-offset="591">
+        <state line="29" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="14" selection-start="435" selection-end="435" vertical-scroll-proportion="0.58303887" vertical-offset="0" max-vertical-offset="570">
           <folding />
         </state>
       </provider>
