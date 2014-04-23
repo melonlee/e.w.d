@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="ewd:war">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="Wechat_Engine.war">
+      <element id="artifact" artifact-name="Wechat_Engine:war exploded" />
+    </root>
+  </artifact>
+</component>
