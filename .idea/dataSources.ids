@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="MySQL - EWD_DB@localhost" uuid="3fcaec07-1ddc-4305-a47e-164ccba64600">
+    <database-info product="MySQL" version="5.1.46" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.29 ( Revision: alexander.soklakov@oracle.com-20140120140810-s44574olh90i6i4l )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="EWD_DB"/>
+    <table name="T_Account" schema="" catalog="EWD_DB" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="title" sqlType="VARCHAR" length="64" precision="0" nullable="false" jdbcType="12"/>
+      <column name="token" sqlType="VARCHAR" length="128" precision="0" nullable="false" jdbcType="12"/>
+      <column name="createDate" sqlType="VARCHAR" length="64" precision="0" nullable="false" jdbcType="12"/>
+      <column name="devUrl" sqlType="VARCHAR" length="256" precision="0" nullable="true" jdbcType="12"/>
+      <column name="status" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" def="MA==" remarks="6buY6K6k5Li6MCDmnKrpqozor4HnirbmgIEgICAx5Li66aqM6K+B54q25oCB"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="T_Admin" schema="" catalog="EWD_DB" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="userName" sqlType="VARCHAR" length="32" precision="0" nullable="false" jdbcType="12"/>
+      <column name="userPwd" sqlType="VARCHAR" length="128" precision="0" nullable="false" jdbcType="12"/>
+      <column name="lastLogin" sqlType="VARCHAR" length="64" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="T_Message" schema="" catalog="EWD_DB" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="title" sqlType="VARCHAR" length="256" precision="0" nullable="false" jdbcType="12"/>
+      <column name="descStr" sqlType="VARCHAR" length="512" precision="0" nullable="true" jdbcType="12"/>
+      <column name="imageUrl" sqlType="VARCHAR" length="256" precision="0" nullable="true" jdbcType="12"/>
+      <column name="url" sqlType="VARCHAR" length="256" precision="0" nullable="true" jdbcType="12"/>
+      <column name="type" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" remarks="MSB0ZXh0IDIgbmV3cw=="/>
+      <column name="isDefault" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def="MQ==" remarks="MSBkZWZhdWx0ICAwIGtleXdvcmxkcw=="/>
+      <column name="createDate" sqlType="VARCHAR" length="64" precision="0" nullable="false" jdbcType="12"/>
+      <column name="accountID" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>

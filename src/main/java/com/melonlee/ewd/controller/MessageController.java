@@ -37,7 +37,7 @@ public class MessageController {
      * @return
      */
     @RequestMapping(value = "defText", method = {RequestMethod.POST})
-    public String defaultText(ModelMap model, @RequestParam(value = "push_text_content", required = false) String push_text_content,
+    public String defaultText(ModelMap model, @RequestParam(value = "msgID", required = false) int msgID, @RequestParam(value = "push_text_content", required = false) String push_text_content,
                               @RequestParam(value = "accountID", required = false) int accountID) {
 
         MessageBean message = new MessageBean();
@@ -46,7 +46,17 @@ public class MessageController {
         message.setType(1); //文本
         message.setCreateDate(DateFormatUtils.getNow());
         message.setAccountID(accountID);
-        int status = messagesDao.saveDefaultText(message);
+        message.setId(msgID);
+
+        int status =  0 ;
+
+        if(msgID>0){
+            status = messagesDao.updateDefaultText(message);
+        }else{
+            status =  messagesDao.saveDefaultText(message);
+        }
+
+
         model.addAttribute("status", status);
         return "index";
     }
@@ -61,7 +71,7 @@ public class MessageController {
      * @return
      */
     @RequestMapping(value = "defNews", method = {RequestMethod.POST})
-    public String defNews(HttpServletRequest request,  ModelMap model, @RequestParam(value = "title", required = false) String title,
+    public String defNews(HttpServletRequest request,  ModelMap model, @RequestParam(value = "msgID", required = false) int msgID, @RequestParam(value = "title", required = false) String title,
                           @RequestParam(value = "url", required = false) String url,@RequestParam(value = "accountID", required = false) int accountID) {
 
         String filePath = request.getSession().getServletContext().getRealPath("/") + "source/userdatas/";
@@ -96,6 +106,7 @@ public class MessageController {
         }
 
         MessageBean message = new MessageBean();
+        message.setId(msgID);
         message.setTitle(title);
         message.setIsDefault(1);
         message.setType(2);
@@ -103,10 +114,22 @@ public class MessageController {
         message.setImageUrl(imageUrl);
         message.setAccountID(accountID);
         message.setCreateDate(DateFormatUtils.getNow());
-        int status = messagesDao.saveDefaultNews(message);
+
+
+        int status = 0 ;
+
+        if(msgID>0){
+            status = messagesDao.updateDefaultNews(message);
+        }else{
+            status = messagesDao.saveDefaultNews(message);
+        }
+
         model.addAttribute("status", status);
         return "index";
     }
+
+
+
 
 
 }

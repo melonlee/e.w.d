@@ -29,4 +29,20 @@ public class MessageDao {
                 .update("INSERT INTO T_Message (title,type,isDefault,createDate,url,imageUrl,accountID) VALUES(?,?,?,?,?,?,?)",
                         new Object[]{message.getTitle(),message.getType(),message.getIsDefault(),message.getCreateDate(),message.getUrl(),message.getImageUrl(),message.getAccountID()});
     }
+
+    public int updateDefaultNews(MessageBean message) {
+
+
+        return jdbcTemplate
+                .update("UPDATE T_Message SET title=?,url=?,imageUrl=? where id = ? ",
+                        new Object[]{message.getTitle(),message.getUrl(),message.getImageUrl(),message.getId()});
+
+    }
+
+    public int updateDefaultText(MessageBean message) {
+
+        return jdbcTemplate
+                .update("UPDATE T_Message SET title=? where id = ? ",
+                        new Object[]{message.getTitle(),message.getId()});
+    }
 }
