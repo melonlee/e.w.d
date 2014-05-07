@@ -57,7 +57,7 @@
             <value>root</value>
         </property>
         <property name="password">
-            <value>melon</value>
+            <value>melon@o2oapp.com#mysql</value>
         </property>
     </bean>
 

@@ -85,13 +85,7 @@ public class KeyWordsController {
         keyWordsBean.setAccountID(accountID);
         keyWordsBean.setId(id);
 
-
-
-
-
-
         Integer keyID = keyWordsDao.saveKeyWords(keyWordsBean);
-        System.out.println("keyID===>"+keyID);
         if(null!=keyID){
 
             String filePath = request.getSession().getServletContext().getRealPath("/") + "source/userdatas/";
